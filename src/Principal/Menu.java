@@ -1,31 +1,72 @@
 package Principal;//crear un programa
 import javax.swing.JOptionPane; //importar una clase 
-//Se van a importar las otras clases de esta manera "import nombreClase;
+import programasPrimero.*;
 
 public class Menu {
-    //atributo
     
-    int x;
+    protected int x;
     
-    //atributo es llamado asi porque esta declarado enre la clase principal y fuera de los metodos
     
     public static void main (String []args){ //metodo principal
-        byte seleccion,a,b,c; //declaracion de variables
+        byte seleccion; //declaracion de variables
          String nom;
          
-        seleccion=Byte.parseByte(JOptionPane.showInputDialog("Selecciona el "
-                + " numero que corresponda a su eleccion"));
+        seleccion=Byte.parseByte(JOptionPane.showInputDialog("Estas son las "
+                + "opciones de los programas que puede ejecutar: \n"
+                + "Seleccione un numero para seguir con el programa. \n"
+                + "\n"
+                + "1. Ingresar dos nummeros y obtener el mayor.\n "
+                + "2. Ingresar dos numeros y saber cual es el mayor.\n"
+                + "3. Obtener la hipotenusa de un triangulo rectangulo.\n"
+                + "4. Obtener el area y volumen de un cilindro.\n"
+                + "5. Determinar si un numero es par o impar.\n"
+                + "6. Calificaciones.\n"
+                + "7. Descuentos y ofertas de la cafeteria.\n"
+                + "8. Bonos dependiendo de los talleres de TEC.\n "
+                + "9. Calcular area de un rectangulo, circulo o triangulo.\n"
+                + "10. Calcular de IMC. (Indice de Masa Corporal).\n"
+                + "11. Obtener el factorial de un numero.\n"
+                + "12. Obtener las tablas basicas de multiplicar.\n"
+                + "13. Mostrar un arbol de navidad de asteriscos.\n"
+                + "14. Obten tu promedio general y por unidad.\n"
+                + "15. Obten una multiplicacion de dos matrices.\n"));
         
         switch(seleccion){
             case 1:
-                break; //termina el caso
+                dosValores1 objeto1=new dosValores1();
+                
+                break; 
             case 2:
-                break;//termina el caso
+                break;
             case 3:
-                break; //termina el caso
+                break;
+            case 4:
+                break;
+            case 5:
+                break;
+            case 6:
+                break;
+            case 7:
+                break;
+            case 8:
+                break;
+            case 9:
+                break;
+            case 10:
+                break;
+            case 11:
+                break;
+            case 12:
+                break;
+            case 13:
+                break;
+            case 14:
+                break;
+            case 15:
+                break;
             default:
         }//cierra el switch
-        nom=JOptionPane.showInputDialog("Ingresa tu nombre complteo");
+        nom=JOptionPane.showInputDialog("Ingresa tu nombre completo");
         
         
         /*Crear un objeto
