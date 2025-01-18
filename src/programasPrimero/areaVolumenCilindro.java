@@ -2,7 +2,7 @@ package programasPrimero;
 import javax.swing.JOptionPane;
 
 public class areaVolumenCilindro {
-    public static void main(String[] args) {
+   public void Fac(String[] args) {
         
         short R=0, H=0, volumen, area;
          R=Short.parseShort(JOptionPane.showInputDialog("Digite el valor del Radio:"));

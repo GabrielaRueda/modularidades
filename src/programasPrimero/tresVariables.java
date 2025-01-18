@@ -2,7 +2,7 @@ package programasPrimero;
 import javax.swing.JOptionPane;
  
 public class tresVariables {
-    public static void main(String[] args) {
+   public void Fac(String[] args) {
    
    short A, B, C ;
    A=Short.parseShort(JOptionPane.showInputDialog("Ingrese el valor para  A:"));

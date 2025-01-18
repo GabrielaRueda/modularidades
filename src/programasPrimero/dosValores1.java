@@ -2,7 +2,7 @@ package programasPrimero;
 import javax.swing.JOptionPane;
 
 public class dosValores1 {
-    public static void main(String[] args) {
+    public void Fac(String[] args) {
         
         short A=0, B=0;
         A=Short.parseShort(JOptionPane.showInputDialog("Ingrese el valor de  A:"));

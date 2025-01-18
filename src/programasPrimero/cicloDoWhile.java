@@ -2,7 +2,7 @@ package programasPrimero;
 import javax.swing.JOptionPane;
 
 public class cicloDoWhile {
-    public static void main(String [] arqs){
+    public void Fac(String[] args) {
         float estatura, imc;
         int peso;
         byte resp=0;

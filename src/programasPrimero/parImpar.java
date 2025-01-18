@@ -2,8 +2,8 @@ package programasPrimero;
 import javax.swing.JOptionPane;
 
 public class parImpar {
-    public static void main(String[] args) {
-        
+   public void Fac(String[] args) {
+       
       short N;
       N=Short.parseShort(JOptionPane.showInputDialog("Favor de ingresar un numero: "));
      

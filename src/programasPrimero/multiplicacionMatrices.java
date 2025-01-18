@@ -2,7 +2,7 @@ package programasPrimero;
 import javax.swing.JOptionPane;
 
 public class multiplicacionMatrices {
-    public static void main(String[] args) {
+    public void Fac(String[] args) {
 
         int[][] m1 = new int[3][3];
         int[][] m2 = new int[3][3];

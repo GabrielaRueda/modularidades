@@ -1,16 +1,15 @@
-package Principal;//crear un programa
+package Principal;//crear un programas
 import javax.swing.JOptionPane; //importar una clase 
 import programasPrimero.*;
 
 public class Menu {
     
-    protected int x;
-    
-    
-    public static void main (String []args){ //metodo principal
+    protected int x;    
+   public static void main (String []args){ //metodo principal
         byte seleccion; //declaracion de variables
-         String nom;
+         int doo;
          
+     do {
         seleccion=Byte.parseByte(JOptionPane.showInputDialog("Estas son las "
                 + "opciones de los programas que puede ejecutar: \n"
                 + "Seleccione un numero para seguir con el programa. \n"
@@ -34,77 +33,69 @@ public class Menu {
         switch(seleccion){
             case 1:
                 dosValores1 objeto1=new dosValores1();
-                
+                objeto1.Fac(args);
                 break; 
             case 2:
+                tresVariables objeto2=new tresVariables();
+                objeto2.Fac(args);
                 break;
             case 3:
+                hipotenusa objeto3=new hipotenusa();
+                objeto3.Fac(args);
                 break;
             case 4:
+                areaVolumenCilindro objeto4=new areaVolumenCilindro();
+                objeto4.Fac(args);
                 break;
             case 5:
+                parImpar objeto5=new parImpar();
+                objeto5.Fac(args);
                 break;
             case 6:
+                calificaciones objeto6=new calificaciones();
+                objeto6.Fac(args);
                 break;
             case 7:
+                bolitasColores objeto7=new bolitasColores();
+                objeto7.Fac(args);
                 break;
             case 8:
+                talleres objeto8=new talleres();
+                objeto8.Fac(args);
                 break;
             case 9:
+                swichFiguras objeto9=new swichFiguras();
+                objeto9.Fac(args);
                 break;
             case 10:
+                cicloDoWhile objeto10=new cicloDoWhile();
+                objeto10.Fac(args);
                 break;
             case 11:
+                factorial objeto11=new factorial();
+                objeto11.Fac(args);
                 break;
             case 12:
+                tablasMultiplicar objeto12=new tablasMultiplicar();
+                objeto12.Fac(args);
                 break;
             case 13:
+                arbolNavideño objeto13=new arbolNavideño();
+                objeto13.Fac(args);
                 break;
             case 14:
+                promedioMatrices objeto14=new promedioMatrices();
+                objeto14.Fac(args);
                 break;
             case 15:
+                multiplicacionMatrices objeto15=new multiplicacionMatrices();
+                objeto15.Fac(args);
                 break;
             default:
+                JOptionPane.showMessageDialog(null, "Intente nuevamente");
         }//cierra el switch
-        nom=JOptionPane.showInputDialog("Ingresa tu nombre completo");
-        
-        
-        /*Crear un objeto
-        NombreClase identificadorObjeto = new Constructor()
-        
-        -NombreClase: Clase que contierne el metodo que se quiere invocar.
-        -identificadorObjeto: Es el nombre del objeto en minusculas. 
-        -new: Sirve para identificar que es un nuevo objeto y que se reserva un 
-        espacio en memoria para el mismo
-        -Constructor: Es un metodo especial que lleva mismo nombre de la clase que 
-        contiene el metodoque m,andare a llamar y se coloca parentesis.  */
-        
-        Menu objeto=new Menu();  //creacionDeObjeto
-        objeto.registroDatos(nom); //invocar al metodo con un objeto
-        
-        
-    }//cierra el metodo principal
-    
-    /*segundo metodo SINTAXIS
-    modificadorAcceso tipoRetorno identificador(lista de parametros){...}
-    Donde: 
-    -modificador de acceso puede ser: publico, amigable, private o protegido
-    -tipo de retorno puede ser: byte, short, int,long, float, double, boolean, char(return)
-                                string(return)
-                                void //quiere decir sin ningun tipo de retorno significa vacio
-    -identificador (nombre del metodo), inicia con minuscula, nomenglatura camello,_, sin espacios.
-    -lista de parametros: tipoDato identificador, por cada uno de ellos.
-    ejemplo:(byte x, byte y)
-    */
-    
-    public static void imprimirMensaje(){
-        System.out.println("Estamos a punto de concluir tu primer semestre y ya eres "
-                + "programadora. ");
-    }
-    
-    public static void  registroDatos(String nombre){ //la lista de metodos es llamada tambien signatura
-        System.out.println("Bienvenida " + nombre);
-        imprimirMensaje();
-    }
+        doo=Integer.parseInt(JOptionPane.showInputDialog("Presiona '1' si quieres volver a ver el menú principal. "));
+     }while(doo==1);
+   }
 }//cierrra la claes
 

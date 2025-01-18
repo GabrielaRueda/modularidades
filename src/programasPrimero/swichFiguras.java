@@ -3,7 +3,7 @@ import javax.swing.JOptionPane; //Importacion de la clase de cierto paquete
 
 public class swichFiguras {  //Definir la clase, en este caso el publico o el
     //amigable
-    public static void main(String[] gaby) { //Es un metodo, se caracteriza por
+   public void Fac(String[] args) { //Es un metodo, se caracteriza por
         //que tiene parentesis y la llave
         
         byte opcion; //declaracion de variables y su asigancion de que tipo es.

@@ -2,7 +2,7 @@ package programasPrimero;
 import javax.swing.JOptionPane;
 
 public class factorial {
-    public static void main(String[] gaby) {
+    public void Fac(String[] args) {
         int fact, num, x=1;
         byte resp=0;
         

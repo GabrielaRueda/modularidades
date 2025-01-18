@@ -1,6 +1,6 @@
 package programasPrimero;
 public class tablasMultiplicar {
-    public static void main(String[] args) {
+    public void Fac(String[] args) {
         
         int n = 10;
         for (int x = 1; x <= n; x++) {

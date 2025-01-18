@@ -2,7 +2,7 @@ package programasPrimero;
 import javax.swing.JOptionPane;
 
 public class bolitasColores {
-    public static void main(String[] args) {
+    public void Fac(String[] args) {
         
         short total1, totalFinal;
         String colorBola;

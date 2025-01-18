@@ -2,7 +2,7 @@ package programasPrimero;
 import javax.swing.JOptionPane;
 
 public class calificaciones {
-    public static void main(String[] args) {
+    public void Fac(String[] args) {
    
         int Nota;
         

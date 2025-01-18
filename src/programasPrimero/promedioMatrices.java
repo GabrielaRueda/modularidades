@@ -2,7 +2,7 @@ package programasPrimero;
 import javax.swing.JOptionPane;
 
 public class promedioMatrices {
-    public static void main(String[] args) {
+    public void Fac(String[] args) {
         
         String Materia[] = {"CALCDIF", "MATEDIS", "FUNDPRO", "FUNDINV", "QUIMICA",
             "DESSUS"};
@@ -21,10 +21,7 @@ public class promedioMatrices {
                         + "Ingresa Calificación de " + Materia[x] + " UNIDAD " + (y + 1)));
             }
         }
-
-        // Impresión de encabezado
-        
-        
+        // Impresión de encabezado    
         for (x = 0; x < 7; x++) {  
             System.out.printf(Encabezado[x] + "\t");
         }
